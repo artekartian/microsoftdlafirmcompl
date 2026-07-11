@@ -1131,7 +1131,7 @@ if(hdr){
     L+'span'+R+'Microsoft 365 \u2022 Security \u2022 AI-ready'+L+'/span'+R+L+'/div'+R;
   var brand=a('#top',brandInner,'brand',' aria-label="Strona glowna"');
   var lk='';
-  [['#dlaczego','Migracja'],['#licencje','Licencje'],['#copilot','Copilot'],['#pakiety','Administracja'],['#faq','FAQ'],['#kontakt','Kontakt']].forEach(function(x){lk+=a(x[0],x[1]);});
+  [['#dlaczego','Migracja'],['#copilot','Copilot'],['#licencje','Licencje'],['#pakiety','Administracja'],['#faq','FAQ'],['#kontakt','Kontakt']].forEach(function(x){lk+=a(x[0],x[1]);});
   var nv=L+'nav class="desktop" aria-label="Nawigacja"'+R+lk+L+'/nav'+R;
   var hmb=L+'button class="hamburger" id="openMenu" aria-label="Otworz menu" aria-controls="mobileMenu" aria-expanded="false"'+R+
     L+'svg viewBox="0 0 24 24" fill="none" aria-hidden="true"'+R+
@@ -1146,7 +1146,7 @@ if(hdr){
 var mn=document.querySelector('#mobileMenu .mobile-nav');
 if(mn){
   var ar=L+'span style="color:rgba(234,240,255,.55)"'+R+'\u2192'+L+'/span'+R;var mh='';
-  [['#dlaczego','Migracja poczty i danych'],['#co','Zakres wdro\u017cenia'],['#ai','Test AI-ready'],['#licencje','Licencje Microsoft 365'],['#copilot','Copilot i AI'],['#pakiety','Programy administracji'],['#faq','Najcz\u0119stsze pytania'],['#kontakt','Kontakt / wycena']].forEach(function(x){mh+=L+'a href="'+x[0]+'" data-close'+R+x[1]+' '+ar+L+'/a'+R;});
+  [['#dlaczego','Migracja poczty i danych'],['#co','Zakres wdro\u017cenia'],['#ai','Test AI-ready'],['#copilot','Copilot i AI'],['#licencje','Licencje Microsoft 365'],['#pakiety','Programy administracji'],['#faq','Najcz\u0119stsze pytania'],['#kontakt','Kontakt / wycena']].forEach(function(x){mh+=L+'a href="'+x[0]+'" data-close'+R+x[1]+' '+ar+L+'/a'+R;});
   mn.innerHTML=mh;
 }
 var mc=document.querySelector('#mobileMenu .mobile-cta');
