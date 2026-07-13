@@ -280,6 +280,15 @@ details p a:hover{color:var(--accent1)}
 .section-head .pill,section > .container > .pill{margin-bottom:14px}
 .brand{gap:14px}
 .hamburger svg{width:22px;height:22px;display:block}
+#quickForm input,#quickForm select,#quickForm .btn{font-size:12px;padding:9px 12px}2#quickForm select{text-overflow:ellipsis;white-space:nowrap;overflow:hidden}3#quickForm select option{font-size:13px;padding:8px 10px}4.formularzGrid{grid-template-columns:1fr 380px}5@media(max-width:980px){.formularzGrid{grid-template-columns:1fr}}
+.formularzGrid{gap:16px}2#quickForm select{max-width:100%;width:100%}
+.formularzGrid>div>h3{font-size:18px;margin:0 0 8px}
+.formularzGrid>div>.lead{font-size:14px;line-height:1.5;margin:0}
+.formularzGrid .feat{gap:14px}
+.formularzGrid .feat li{font-size:13px;line-height:1.5}
+.formularzGrid .chk{width:20px;height:20px}
+.formularzGrid .chk svg{width:12px;height:12px}
+.formularzGrid>div>.lead{font-size:13px;max-width:56ch}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"microsoftdlafirm.com.pl","areaServed":"PL","description":"Wdrożenia Microsoft 365 dla małych i średnich firm z gotowością na AI (Copilot).","url":"https://microsoftdlafirm.com.pl","serviceType":["Microsoft 365 wdrożenie","Migracja poczty i danych","Bezpieczeństwo","Przygotowanie do AI / Copilot"],"sameAs":[]}
@@ -449,6 +458,7 @@ details p a:hover{color:var(--accent1)}
 </div>
 </section>
 
+<!-- COPILOT -->
 <section id="copilot">
 <div class="container">
 <div class="section-head reveal">
@@ -458,22 +468,24 @@ details p a:hover{color:var(--accent1)}
 <p>Licencje M365 z wbudowanym asystentem AI. Copilot pracuje w Word, Excel, PowerPoint, Outlook i Teams na danych Twojej firmy.</p>
 </div>
 </div>
-<div class="pricing">
-<div class="priceCard dim reveal">
-<div class="priceBadge purple"><span class="dot"></span> Dodatek AI</div>
-<div class="priceName">Copilot Business (dodatek)</div>
-<p class="priceDesc">Dodatek Copilot do istniejącej subskrypcji M365 Business Standard lub Premium.</p><br>
+<div class="pricing" style="align-items:flex-end;">
+
+<div class="priceCard dim reveal" style="padding:14px 16px;opacity:0.85;">
+<div class="priceBadge neutral"><span class="dot"></span> Dodatek AI</div>
+<div class="priceName" style="font-size:15px;">Copilot Business (dodatek)</div>
+<p class="priceDesc" style="font-size:13px;">Dodatek Copilot do istniejącej subskrypcji M365 Business Standard lub Premium.</p>
 <div class="priceValue">899 PLN</div>
 <div class="priceUnit">netto / użytkownik / rok</div>
-<ul class="bullets">
+<ul class="bullets" style="font-size:13px;">
 <li>Copilot w Word, Excel, PowerPoint, Outlook, Teams</li>
 <li>Microsoft 365 Chat (Business Chat)</li>
 <li>Wymaga M365 Business Standard lub Premium</li>
 </ul>
-<a class="btn" href="mailto:msp@valcreon.com?subject=Kontakt%20ze%20strony%20microsoftdlafirm.com.pl&body=Jeste%C5%9Bmy%20zainteresowani%20licencjami%20Microsoft%20365%20Copilot%20Business.%0A%0ANazwa%20firmy%3A%0ANIP%3A%0AKontakt%3A%0ACzy%20maj%C4%85%20ju%C5%BC%20Pa%C5%84stwo%20Microsoft%20365%20(tak%2Fnie%2Fnie%20wiem)%3A%0AIle%20pracownik%C3%B3w%20ma%20obj%C4%85%C4%87%20licencja%3A%0A%0ADzi%C4%99kuj%C4%99!">Zapytaj o Copilot<svg viewBox="0 0 24 24" fill="none" style="width:18px;height:18px"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 6.5 12 12.5l8.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="btn" href="mailto:msp@valcreon.com?subject=Zapytanie%20%E2%80%93%20Microsoft%20365%20Copilot%20Business%20(dodatek)&body=Dzie%C5%84%20dobry%2C%0A%0AInteresuje%20mnie%20Microsoft%20365%20Copilot%20Business%20(dodatek).%0A%0ANazwa%20firmy%3A%0ANIP%3A%0AKontakt%3A%0ALiczba%20u%C5%BCytkownik%C3%B3w%3A%0A%0ADzi%C4%99kuj%C4%99!">Zapytaj o Copilot</a>
 </div>
-<div class="priceCard featured-purple reveal">
-<div class="priceBadge purple"><span class="dot"></span> Pakiet z AI</div>
+
+<div class="priceCard featured reveal" style="padding:28px 24px;">
+<div class="priceBadge"><span class="dot"></span> Pakiet z AI</div>
 <div class="priceName">M365 Business Standard + Copilot</div>
 <p class="priceDesc">Pełen pakiet Microsoft 365 Business Standard z Copilotem w cenie.</p>
 <div class="priceValue">999 PLN</div>
@@ -484,11 +496,12 @@ details p a:hover{color:var(--accent1)}
 <li>Copilot we wszystkich aplikacjach M365</li>
 <li>Webinary i zdarzenia online</li>
 </ul>
-<a class="btn" href="mailto:msp@valcreon.com?subject=Kontakt%20ze%20strony%20microsoftdlafirm.com.pl&body=Jeste%C5%9Bmy%20zainteresowani%20licencjami%20Microsoft%20365%20Business%20Standard%20+%20Copilot.%0A%0ANazwa%20firmy%3A%0ANIP%3A%0AKontakt%3A%0ACzy%20maj%C4%85%20ju%C5%BC%20Pa%C5%84stwo%20Microsoft%20365%20(tak%2Fnie%2Fnie%20wiem)%3A%0AIle%20pracownik%C3%B3w%20ma%20obj%C4%85%C4%87%20licencja%3A%0A%0ADzi%C4%99kuj%C4%99!">Zapytaj o Standard+Copilot<svg viewBox="0 0 24 24" fill="none" style="width:18px;height:18px"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 6.5 12 12.5l8.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="btn primary" href="mailto:msp@valcreon.com?subject=Zapytanie%20%E2%80%93%20M365%20Business%20Standard%20%2B%20Copilot&body=Dzie%C5%84%20dobry%2C%0A%0AInteresuje%20mnie%20M365%20Business%20Standard%20%2B%20Copilot.%0A%0ANazwa%20firmy%3A%0ANIP%3A%0AKontakt%3A%0ALiczba%20u%C5%BCytkownik%C3%B3w%3A%0A%0ADzi%C4%99kuj%C4%99!">Zapytaj o Standard + Copilot</a>
 </div>
-<div class="priceCard featured-mint reveal">
-<div class="priceBadge mint"><span class="dot"></span> Najlepsza wartość</div>
-<div class="priceName">M365 Business Premium + Copilot</div>
+
+<div class="priceCard featured-purple reveal" style="padding:44px 32px;box-shadow:0 0 48px rgba(177,125,255,.25),0 24px 70px rgba(0,0,0,.55);">
+<div class="priceBadge purple"><span class="dot"></span> Najlepsza wartość</div>
+<div class="priceName" style="font-size:20px;">M365 Business Premium + Copilot</div>
 <p class="priceDesc">Wszystko: Office, bezpieczeństwo, Intune, Defender i Copilot AI w jednym pakiecie.</p>
 <div class="priceValue">1 499 PLN</div>
 <div class="priceUnit">netto / użytkownik / rok</div>
@@ -499,15 +512,19 @@ details p a:hover{color:var(--accent1)}
 <li>Azure Information Protection</li>
 <li>Dostęp warunkowy + zaawansowane MFA</li>
 </ul>
-<a class="btn" href="mailto:msp@valcreon.com?subject=Kontakt%20ze%20strony%20microsoftdlafirm.com.pl&body=Jeste%C5%9Bmy%20zainteresowani%20licencjami%20Microsoft%20365%20Business%20Premium%20+%20Copilot.%0A%0ANazwa%20firmy%3A%0ANIP%3A%0AKontakt%3A%0ACzy%20maj%C4%85%20ju%C5%BC%20Pa%C5%84stwo%20Microsoft%20365%20(tak%2Fnie%2Fnie%20wiem)%3A%0AIle%20pracownik%C3%B3w%20ma%20obj%C4%85%C4%87%20licencja%3A%0A%0ADzi%C4%99kuj%C4%99!">Zapytaj o Premium+Copilot<svg viewBox="0 0 24 24" fill="none" style="width:18px;height:18px"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 6.5 12 12.5l8.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="btn primary" href="mailto:msp@valcreon.com?subject=Zapytanie%20%E2%80%93%20M365%20Business%20Premium%20%2B%20Copilot&body=Dzie%C5%84%20dobry%2C%0A%0AInteresuje%20mnie%20M365%20Business%20Premium%20%2B%20Copilot.%0A%0ANazwa%20firmy%3A%0ANIP%3A%0AKontakt%3A%0ALiczba%20u%C5%BCytkownik%C3%B3w%3A%0A%0ADzi%C4%99kuj%C4%99!">Zapytaj o Premium + Copilot</a>
 </div>
+
 </div>
 <div style="margin-top:20px;text-align:center" class="reveal">
-<a class="btn" href="https://m365withcopilot.com" target="_blank" rel="noopener">Więcej o Copilot dla firm <svg viewBox="0 0 24 24" fill="none" style="width:14px;height:14px;display:inline-block;vertical-align:-2px" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="btn" href="https://m365withcopilot.com" target="_blank" rel="noopener">Więcej o Copilot dla firm – m365withcopilot.com</a>
 </div>
 </div>
 </section>
 
+
+
+<!-- LICENCJE -->
 <section id="licencje">
 <div class="container">
 <div class="section-head reveal">
@@ -517,24 +534,25 @@ details p a:hover{color:var(--accent1)}
 <p>Podstawowe plany dla firm do 300 użytkowników. Poczta, Teams, Office, chmura, bezpieczeństwo.</p>
 </div>
 </div>
-<div class="pricing">
-<div class="priceCard dim reveal">
+<div class="pricing" style="align-items:flex-end;">
+
+<div class="priceCard dim reveal" style="padding:14px 16px;opacity:0.85;">
 <div class="priceBadge neutral"><span class="dot"></span> Podstawowy</div>
-<div class="priceName">Microsoft 365 Business Basic</div>
-<p class="priceDesc">Poczta, Teams, OneDrive i aplikacje Office w wersji web.</p><br>
+<div class="priceName" style="font-size:15px;">Microsoft 365 Business Basic</div>
+<p class="priceDesc" style="font-size:13px;">Poczta, Teams, OneDrive i aplikacje Office w wersji web.</p>
 <div class="priceValue">299 PLN</div>
 <div class="priceUnit">netto / użytkownik / rok</div>
-<ul class="bullets">
+<ul class="bullets" style="font-size:13px;">
 <li>Exchange Online (skrzynka 100 GB)</li>
 <li>Teams: czat, spotkania, rozmowy</li>
 <li>OneDrive 1 TB na użytkownika</li>
 <li>SharePoint Online</li>
 <li>Office tylko w wersji web i mobile</li>
 </ul>
-<a class="btn" href="mailto:msp@valcreon.com?subject=Kontakt%20ze%20strony%20microsoftdlafirm.com.pl&body=Jeste%C5%9Bmy%20zainteresowani%20licencjami%20Microsoft%20365%20Business%20Basic%20bez%20Copilot.%0A%0ANazwa%20firmy%3A%0ANIP%3A%0AKontakt%3A%0ACzy%20maj%C4%85%20ju%C5%BC%20Pa%C5%84stwo%20Microsoft%20365%20(tak%2Fnie%2Fnie%20wiem)%3A%0AIle%20pracownik%C3%B3w%20ma%20obj%C4%85%C4%87%20licencja%3A%0A%0ADzi%C4%99kuj%C4%99!">Zapytaj o Basic<svg viewBox="0 0 24 24" fill="none" style="width:18px;height:18px"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 6.5 12 12.5l8.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="btn" href="mailto:msp@valcreon.com?subject=Zapytanie%20%E2%80%93%20M365%20Business%20Basic&body=Dzie%C5%84%20dobry%2C%0A%0AInteresuje%20mnie%20Microsoft%20365%20Business%20Basic.%0A%0ANazwa%20firmy%3A%0ANIP%3A%0AKontakt%3A%0ALiczba%20u%C5%BCytkownik%C3%B3w%3A%0A%0ADzi%C4%99kuj%C4%99!">Zapytaj o Basic</a>
 </div>
 
-<div class="priceCard featured reveal">
+<div class="priceCard featured reveal" style="padding:28px 24px;">
 <div class="priceBadge"><span class="dot"></span> Popularny</div>
 <div class="priceName">Microsoft 365 Business Standard</div>
 <p class="priceDesc">Pełne aplikacje Office desktop + wszystko z Basic + webinary.</p>
@@ -546,11 +564,12 @@ details p a:hover{color:var(--accent1)}
 <li>Webinary i zdarzenia online</li>
 <li>Microsoft Loop, Clipchamp</li>
 </ul>
-<a class="btn" href="mailto:msp@valcreon.com?subject=Kontakt%20ze%20strony%20microsoftdlafirm.com.pl&body=Jeste%C5%9Bmy%20zainteresowani%20licencjami%20Microsoft%20365%20Business%20Standard%20bez%20Copilot.%0A%0ANazwa%20firmy%3A%0ANIP%3A%0AKontakt%3A%0ACzy%20maj%C4%85%20ju%C5%BC%20Pa%C5%84stwo%20Microsoft%20365%20(tak%2Fnie%2Fnie%20wiem)%3A%0AIle%20pracownik%C3%B3w%20ma%20obj%C4%85%C4%87%20licencja%3A%0A%0ADzi%C4%99kuj%C4%99!">Zapytaj o Standard<svg viewBox="0 0 24 24" fill="none" style="width:18px;height:18px"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 6.5 12 12.5l8.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="btn primary" href="mailto:msp@valcreon.com?subject=Zapytanie%20%E2%80%93%20M365%20Business%20Standard&body=Dzie%C5%84%20dobry%2C%0A%0AInteresuje%20mnie%20Microsoft%20365%20Business%20Standard.%0A%0ANazwa%20firmy%3A%0ANIP%3A%0AKontakt%3A%0ALiczba%20u%C5%BCytkownik%C3%B3w%3A%0A%0ADzi%C4%99kuj%C4%99!">Zapytaj o Standard</a>
 </div>
-<div class="priceCard featured-purple reveal">
+
+<div class="priceCard featured-purple reveal" style="padding:44px 32px;box-shadow:0 0 48px rgba(177,125,255,.25),0 24px 70px rgba(0,0,0,.55);">
 <div class="priceBadge purple"><span class="dot"></span> Bezpieczeństwo</div>
-<div class="priceName">Microsoft 365 Business Premium</div>
+<div class="priceName" style="font-size:20px;">Microsoft 365 Business Premium</div>
 <p class="priceDesc">Wszystko ze Standard + zaawansowane bezpieczeństwo i zarządzanie urządzeniami.</p>
 <div class="priceValue">999 PLN</div>
 <div class="priceUnit">netto / użytkownik / rok</div>
@@ -561,57 +580,93 @@ details p a:hover{color:var(--accent1)}
 <li>Azure Information Protection P1</li>
 <li>Dostęp warunkowy (Conditional Access)</li>
 </ul>
-<a class="btn" href="mailto:msp@valcreon.com?subject=Kontakt%20ze%20strony%20microsoftdlafirm.com.pl&body=Jeste%C5%9Bmy%20zainteresowani%20licencjami%20Microsoft%20365%20Business%20Premium%20bez%20Copilot.%0A%0ANazwa%20firmy%3A%0ANIP%3A%0AKontakt%3A%0ACzy%20maj%C4%85%20ju%C5%BC%20Pa%C5%84stwo%20Microsoft%20365%20(tak%2Fnie%2Fnie%20wiem)%3A%0AIle%20pracownik%C3%B3w%20ma%20obj%C4%85%C4%87%20licencja%3A%0A%0ADzi%C4%99kuj%C4%99!">Zapytaj o Premium<svg viewBox="0 0 24 24" fill="none" style="width:18px;height:18px"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.8"/><path d="M3.5 6.5 12 12.5l8.5-6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<a class="btn primary" href="mailto:msp@valcreon.com?subject=Zapytanie%20%E2%80%93%20M365%20Business%20Premium&body=Dzie%C5%84%20dobry%2C%0A%0AInteresuje%20mnie%20Microsoft%20365%20Business%20Premium.%0A%0ANazwa%20firmy%3A%0ANIP%3A%0AKontakt%3A%0ALiczba%20u%C5%BCytkownik%C3%B3w%3A%0A%0ADzi%C4%99kuj%C4%99!">Zapytaj o Premium</a>
 </div>
+
 </div>
-<div style="margin-top:20px;text-align:center" class="reveal"><a class="btn" href="https://microsoft365.com.pl/cennik.html" target="_blank" rel="noopener">Kompletny cennik Microsoft 365 <svg viewBox="0 0 24 24" fill="none" style="width:14px;height:14px;display:inline-block;vertical-align:-2px" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-</div>
-</div>
+<div style="margin-top:20px;text-align:center" class="reveal">
+<a class="btn" href="https://microsoft365.com.pl/cennik.html" target="_blank" rel="noopener">Kompletny cennik Microsoft 365</a>
 </div>
 </div>
 </section>
 
+
+
+<!-- PAKIETY -->
 <section id="pakiety">
-<div class="container">
-<div class="section-head reveal"><div><h2>Pakiety wdrożeniowe</h2><p>Trzy programy Microsoft 365 &ndash; wdrożenie, administracja i bezpieczeństwo w abonamencie. Bez ukrytych haczyków.</p></div><div class="pill"><span class="dot"></span> najczęściej wybierany: M365 Cyber</div></div>
-<div class="grid">
-<div class="card span-4 reveal">
-<div class="tag">administracja dla małej firmy</div>
-<h3>M365 Admin</h3>
-<p class="muted">Wdrożenie, migracja i codzienna pomoc w jednej opłacie.</p>
-<ul class="feat">
-<li><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l3.2 3.2L18 7.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Uruchomienie Microsoft 365: dzierżawa, konta i licencje dla całego zespołu</li>
-<li><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l3.2 3.2L18 7.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Migracja poczty z konfiguracją domeny (SPF, DKIM, DMARC) bez przestoju</li>
-<li><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l3.2 3.2L18 7.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Dwuetapowe logowanie dla wszystkich pracowników</li>
-<li><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l3.2 3.2L18 7.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Program M365 ONE: 12 miesięcy, 12 zabezpieczeń &ndash; poczta, tożsamość i komputery pod stałą opieką</li>
-</ul>
-</div>
-<div class="card span-4 highlight reveal">
-<div class="tag">dla firm ceniących bezpieczeństwo</div>
-<h3>M365 Cyber</h3>
-<p class="muted">Administracja Microsoft 365 z ochroną przed ransomware i phishingiem.</p>
-<ul class="feat">
-<li><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l3.2 3.2L18 7.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Microsoft 365 Business Premium: kompletne środowisko pracy z zabezpieczeniami klasy enterprise</li>
-<li><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l3.2 3.2L18 7.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Ochrona kont i poczty: dwuetapowe logowanie, zasady dostępu, blokada phishingu i groźnych linków</li>
-<li><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l3.2 3.2L18 7.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Zarządzanie komputerami z chmury: BitLocker, aktualizacje i ochrona przed ransomware</li>
-<li><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l3.2 3.2L18 7.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Stała administracja i monitoring zgodnie z rekomendacjami Microsoft i CISA</li>
-</ul>
-</div>
-<div class="card span-4 reveal">
-<div class="tag">dla dojrzałych organizacji</div>
-<h3>M365 Expert</h3>
-<p class="muted">Zdalny ekspert bezpieczeństwa Microsoft&nbsp;365 dla firm od 50 pracowników.</p>
-<ul class="feat">
-<li><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l3.2 3.2L18 7.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Business Premium lub Enterprise F1-E5: pełne środowisko pracy i zabezpieczeń klasy korporacyjnej</li>
-<li><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l3.2 3.2L18 7.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Model Zero Trust: dostęp warunkowy, logowanie kluczem FIDO2 (YubiKey), ochrona przed przejęciem konta</li>
-<li><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l3.2 3.2L18 7.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Ochrona danych i urządzeń: klasyfikacja (MIP), zapobieganie wyciekom (DLP), BitLocker, zarządzanie telefonami</li>
-<li><span class="chk" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M6 12.5l3.2 3.2L18 7.9" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></span> Stały monitoring alertów Microsoft Defender i reagowanie na incydenty: audyt zdarzeń przez 180 dni</li>
-</ul>
-</div>
-<div class="span-12 reveal" style="color:var(--muted2);font-size:12.5px;line-height:1.6;text-align:center">Ceny zależą od liczby użytkowników, źródła migracji i złożoności. Wycena po krótkiej rozmowie.</div>
-</div>
-</div>
+  <div class="container">
+    <div class="section-head reveal">
+      <div>
+        <div class="pill"><span class="dot"></span> Programy wdrożeniowe</div>
+        <h2>Trzy programy – dla każdego etapu rozwoju firmy</h2>
+        <p>Każdy program to konkretny zakres prac i pakiet technologii dobranych do wielkości i ryzyka firmy. Bez ogólników – wiesz, co dostajesz i&nbsp;dla&nbsp;kogo&nbsp;to&nbsp;jest.</p>
+      </div>
+      <div class="pill"><span class="dot"></span> najczęściej wybierany: M365 Cyber</div>
+    </div>
+    <div class="pricing" style="align-items:stretch;">
+
+      <!-- KARTA 1 M365 Admin: GOOD, neutralna, padding 28px -->
+      <div class="priceCard reveal" style="padding:28px;">
+        <div class="priceBadge neutral"><span class="dot"></span> Startujemy · 1–10 pracowników</div>
+        <div class="priceName">M365 Admin</div>
+        <p class="priceDesc">Prosty program wdrożenia bezpiecznego środowiska pracy. Co miesiąc dostajesz nowe ustawienia zabezpieczeń – Twoja firma rośnie w ochronie krok po kroku.</p>
+        <!-- Ramka Dla kogo - neutralna -->
+        <div style="padding:12px 14px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.10);font-size:13px;color:var(--muted);line-height:1.5;margin:0 0 18px;">
+          <strong style="display:block;margin-bottom:4px;font-size:11px;text-transform:uppercase;letter-spacing:0.6px;font-weight:700;color:var(--muted);">Dla kogo</strong>
+          Mikrofirmy i startujące zespoły 1–10 osób. Nie masz działu IT ani czasu na skomplikowane wdrożenia – chcesz, żeby było bezpiecznie i działało od pierwszego dnia bez komplikacji.
+        </div>
+        <ul class="bullets">
+          <li>Uruchomienie Microsoft 365: dzierżawa, konta i licencje dla całego zespołu</li>
+          <li>Migracja poczty z konfiguracją domeny (SPF, DKIM, DMARC) bez przestoju</li>
+          <li>Dwuetapowe logowanie dla wszystkich pracowników</li>
+          <li>Program M365 ONE: 12 miesięcy, 12 zabezpieczeń – poczta, tożsamość i komputery pod stałą opieką</li>
+        </ul>
+        <a class="btn" href="mailto:msp@valcreon.com?subject=Zapytanie%20%E2%80%93%20M365%20Admin&body=Dzie%C5%84%20dobry%2C%0A%0AInteresuje%20mnie%20program%20M365%20Admin.%0A%0ANazwa%20firmy%3A%0ALiczba%20pracownik%C3%B3w%3A%0AKontakt%3A%0A%0ADzi%C4%99kuj%C4%99.">Zapytaj o M365 Admin</a>
+      </div>
+
+      <!-- KARTA 2 M365 Cyber: BETTER, niebieska featured, padding 28px -->
+      <div class="priceCard featured reveal" style="padding:28px;">
+        <div class="priceBadge"><span class="dot"></span> Rośniemy · 10–50 pracowników</div>
+        <div class="priceName">M365 Cyber</div>
+        <p class="priceDesc">Plan wdrożenia podwyższonych zabezpieczeń dla rosnących firm. Pełna kontrola dostępu, urządzeń i komunikacji – bez luk w politykach zabezpieczeń.</p>
+        <!-- Ramka Dla kogo - niebieska -->
+        <div style="padding:12px 14px;border-radius:14px;background:rgba(124,140,255,.08);border:1px solid rgba(124,140,255,.22);font-size:13px;color:var(--muted);line-height:1.5;margin:0 0 18px;">
+          <strong style="display:block;margin-bottom:4px;font-size:11px;text-transform:uppercase;letter-spacing:0.6px;font-weight:700;color:var(--accent1);">Dla kogo</strong>
+          Małe i średnie firmy 10–50 osób. Działają w Microsoft 365, ale wiedzą, że bez polityk i zarządzania urządzeniami robi się ryzykownie.
+        </div>
+        <ul class="bullets">
+          <li>Microsoft 365 Business Premium: kompletne środowisko pracy z zabezpieczeniami klasy enterprise</li>
+          <li>Ochrona kont i poczty: dwuetapowe logowanie, zasady dostępu, blokada phishingu i groźnych linków</li>
+          <li>Zarządzanie komputerami z chmury: BitLocker, aktualizacje i ochrona przed ransomware</li>
+          <li>Stała administracja i monitoring zgodnie z rekomendacjami Microsoft i CISA</li>
+        </ul>
+        <a class="btn primary" href="mailto:msp@valcreon.com?subject=Zapytanie%20%E2%80%93%20M365%20Cyber&body=Dzie%C5%84%20dobry%2C%0A%0AInteresuje%20mnie%20program%20M365%20Cyber.%0A%0ANazwa%20firmy%3A%0ALiczba%20pracownik%C3%B3w%3A%0AKontakt%3A%0A%0ADzi%C4%99kuj%C4%99.">Zapytaj o M365 Cyber</a>
+      </div>
+
+      <!-- KARTA 3 M365 Expert: BEST, fioletowa featured-purple, padding 28px -->
+      <div class="priceCard featured-purple reveal" style="padding:28px;">
+        <div class="priceBadge purple"><span class="dot"></span> Skalujemy · 50–300 pracowników</div>
+        <div class="priceName">M365 Expert</div>
+        <p class="priceDesc">Zabezpieczenia najwyższej klasy dla Microsoft 365 wraz z monitoringiem bezpieczeństwa. Pełna obserwowalność środowiska – wiesz, co się dzieje, zanim coś się stanie.</p>
+        <!-- Ramka Dla kogo - fioletowa -->
+        <div style="padding:12px 14px;border-radius:14px;background:rgba(177,125,255,.08);border:1px solid rgba(177,125,255,.22);font-size:13px;color:var(--muted);line-height:1.5;margin:0 0 18px;">
+          <strong style="display:block;margin-bottom:4px;font-size:11px;text-transform:uppercase;letter-spacing:0.6px;font-weight:700;color:var(--accent3);">Dla kogo</strong>
+          Średnie firmy 50–300 osób. Wymagania regulacyjne (RODO, NIS2, branżowe), wielu pracowników mobilnych, dane wrażliwe – kontrola musi być ciągła.
+        </div>
+        <ul class="bullets">
+          <li>Business Premium lub Enterprise F1–E5: pełne środowisko pracy i zabezpieczeń klasy korporacyjnej</li>
+          <li>Model Zero Trust: dostęp warunkowy, logowanie kluczem FIDO2 (YubiKey), ochrona przed przejęciem konta</li>
+          <li>Ochrona danych i urządzeń: klasyfikacja (MIP), zapobieganie wyciekom (DLP), BitLocker, zarządzanie telefonami</li>
+          <li>Stały monitoring alertów Microsoft Defender i reagowanie na incydenty, audyt zdarzeń przez 180 dni</li>
+        </ul>
+        <a class="btn primary" href="mailto:msp@valcreon.com?subject=Zapytanie%20%E2%80%93%20M365%20Expert&body=Dzie%C5%84%20dobry%2C%0A%0AInteresuje%20mnie%20program%20M365%20Expert.%0A%0ANazwa%20firmy%3A%0ALiczba%20pracownik%C3%B3w%3A%0AKontakt%3A%0A%0ADzi%C4%99kuj%C4%99.">Zapytaj o M365 Expert</a>
+      </div>
+
+    </div>
+    <div class="reveal" style="color:var(--muted2);font-size:12.5px;line-height:1.6;text-align:center;margin-top:20px">Programy to usługi standaryzowane – wycena zależy od wielkości firmy, posiadanych licencji i zakresu wdrożenia. Wycena w PLN po krótkiej rozmowie.</div>
+  </div>
 </section>
+
 
 
 <section id="proces">
@@ -680,20 +735,38 @@ details p a:hover{color:var(--accent1)}
 </div>
 </section>
 
+<!-- ZAUFALI NAM -->
 <section id="zaufali">
-<div class="container"><div class="section-head reveal"><div><h2>Zaufali nam m.in.</h2><p>Naszym klientom pomagamy bezpiecznie korzystać z Microsoft 365, wdrażać AI oraz rozwijać nowoczesne środowiska pracy.</p></div><div class="pill"><span class="dot"></span>klienci &bull; współpraca</div></div>
-<div class="trustLogos reveal">
-investa.png
-dom100.png
-kuchnia.web
-car.jpg
-diety.svg
-bio.jpg">
-hcm.png
-steskal.png
-tree.svg
-consult.svg
-</div>
+<style>
+#zaufali .trustGrid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:24px}
+#zaufali .trustTile{display:flex;align-items:center;justify-content:center;background:#fff;border-radius:16px;border:1px solid rgba(232,238,252,.08);box-shadow:0 6px 20px rgba(0,0,0,.20);padding:18px 20px;min-height:88px;min-width:0;overflow:hidden;transition:transform .2s ease,box-shadow .2s ease,border-color .2s ease,background .2s ease;cursor:default}
+#zaufali .trustTile:hover{transform:translateY(-3px);background:#fafbff;box-shadow:0 14px 36px rgba(177,125,255,.20);border-color:rgba(177,125,255,.35)}
+#zaufali .trustTile img{max-width:100%;max-height:52px;width:auto;height:auto;object-fit:contain;display:block;filter:none;transition:transform .2s ease}
+#zaufali .trustTile:hover img{transform:scale(1.04)}
+@media(min-width:600px){#zaufali .trustGrid{grid-template-columns:repeat(3,1fr);gap:16px}#zaufali .trustTile{min-height:96px;padding:20px 22px}#zaufali .trustTile img{max-height:56px}}
+@media(min-width:980px){#zaufali .trustGrid{grid-template-columns:repeat(5,1fr);gap:18px}#zaufali .trustTile{min-height:104px;padding:22px 24px}#zaufali .trustTile img{max-height:60px}}
+@media(max-width:480px){#zaufali .trustGrid{gap:12px}#zaufali .trustTile{min-height:76px;padding:14px 16px;border-radius:14px}#zaufali .trustTile img{max-height:44px}}
+</style>
+<div class="container">
+  <div class="section-head reveal">
+    <div>
+      <h2>Zaufali nam m.in.</h2>
+      <p>Naszym klientom pomagamy bezpiecznie korzystać z Microsoft 365, wdrażać AI oraz rozwijać nowoczesne środowiska pracy.</p>
+    </div>
+    <div class="pill"><span class="dot"></span> klienci &bull; współpraca</div>
+  </div>
+  <div class="trustGrid reveal">
+    <div class="trustTile" title="Investa"><img src="investa.jpg" alt="Investa" loading="lazy"></div>
+    <div class="trustTile" title="Dom 100"><img src="dom100.png" alt="Dom 100" loading="lazy"></div>
+    <div class="trustTile" title="Kuchnia Vikinga"><img src="kuchnia.webp" alt="Kuchnia Vikinga" loading="lazy"></div>
+    <div class="trustTile" title="Car Arena"><img src="car.jpg" alt="Car Arena" loading="lazy"></div>
+    <div class="trustTile" title="Diety Od Brokuła"><img src="diety.svg" alt="Diety Od Brokuła" loading="lazy"></div>
+    <div class="trustTile" title="Bioanalytic"><img src="bio.jpg" alt="Bioanalytic" loading="lazy"></div>
+    <div class="trustTile" title="High Capital Holding"><img src="hcm.png" alt="High Capital Holding" loading="lazy"></div>
+    <div class="trustTile" title="Pan Steskal"><img src="steskal.png" alt="Pan Steskal" loading="lazy"></div>
+    <div class="trustTile" title="Tree Capital"><img src="tree.svg" alt="Tree Capital" loading="lazy"></div>
+    <div class="trustTile" title="ConsultRisk"><img src="consult.svg" alt="ConsultRisk" loading="lazy"></div>
+  </div>
 </div>
 </section>
 
